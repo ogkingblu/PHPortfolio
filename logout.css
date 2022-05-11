@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Optima;
+}
+
+.DFV {
+       text-align: center;
+       font-family: 'Permanent Marker', cursive;
+       color:  rgba(0, 35, 122, 0.699);
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: peachpuff;
+}
+
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+.wrap {
+    background-color: #fff;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+    width: 600px;
+    margin: 0 65vh 0 65vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 15px 35px #4b4b4b, 0px 5px 15px rgba(0, 0, 0, .07);
+    padding: 1em;
+}
+
+.formgroup {
+    margin-bottom: 1.5em;
+}
+
+.formlabel {
+    font-size: .75em;
+    color: #262dac;
+    display: block;
+    opacity: 0;
+    transition: all .3s;
+    transform: translateX(-50px);
+}
+
+.forminp {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    font-size: 1.25em;
+    transition: all .6s;
+}
+
+.forminp::placeholder {
+    color: #aaa;
+}
+
+.forminp:focus {
+    box-shadow: none;
+    border-color: #262dac;
+    outline: none;
+}
+
+.formgroup:focus-within {
+    transform: scale(1.1, 1.1);
+}
+
+.forminp:invalid:focus {
+    border-color: red;
+}
+
+.forminp:valid:focus {
+    border-color: green;
+}
+
+.button {
+    background: 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #262dac;
+    font-size: 1em;
+    padding: 10 50px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    border-color: #e9be60;
+    color: #e9be60;
+
+}
+
+textarea {
+    resize: none;
+}
+
+.focused>.formlabel {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+.foot {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: monospace;
+}
